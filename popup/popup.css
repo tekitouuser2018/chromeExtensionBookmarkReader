@@ -1,0 +1,101 @@
+body {
+    width:300px;
+    height: 270px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(147,147,215,1) 0%, rgba(50,158,155,1) 100%);
+}
+
+#searchWords {
+    width: 300px;
+    height: 20px;
+    border-radius:6px;
+    
+}
+
+#searchWords::placeholder {
+        color: gray;
+}
+
+#searchButton {
+    border-radius:6px;
+    background-color: rgb(172, 145, 94);
+    position:absolute;
+    top: 77px;
+    left: 254px;
+}
+
+#searchButton:hover {
+    box-shadow: 0 2px 3px 0 black;
+}
+
+.list {
+    font-weight: bold;
+    font-family: "Meiryo";
+    font-size: 1.5em;
+    width:95%;
+    height:10%;
+    background-color:#adcbdb;
+    text-align:center;
+    vertical-align:middle;
+    border-radius:7px;
+    overflow: hidden;
+    margin:3%;
+    display:block;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0)
+}
+
+.list:hover {
+    height: 11%;
+    width:96%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0);
+    cursor: pointer;
+}
+
+.listdiv {
+    width:95%;
+    display:inline;
+
+}
+
+#cont_bookmark_list2 {
+    border-radius:7px;
+    animation: shadow 3s infinite;
+}
+
+@keyframes shadow {
+    0% { box-shadow: 1px 1px 1px 0 #F00,inset 0 0 1px 0 #F00; }
+    40% { box-shadow: 1px 1px 2px 0 #999,inset 0 0 5px 0 #F00; }
+    60% { box-shadow: 2px 2px 3px 0 #999,inset 0 0 5px 0 #F00; }
+  100% { box-shadow: 3px 3px 5px 0 #999,inset 0 0 5px 0 #F00; }
+}
+
+
+#contents {
+    height: 80%;
+}
+
+.up {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin: 0 138px;
+  border-top: 4px solid #000;
+  border-left: 4px solid #000;
+  transform: rotate(45deg);
+}
+.down {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin: 0 138px;
+  border-bottom: 4px solid #000;
+  border-right: 4px solid #000;
+  transform: rotate(45deg);
+}
+
+
+#searchErrorMessage {
+    color: red;
+    visibility: hidden;
+    font-size: 1.2em;
+}

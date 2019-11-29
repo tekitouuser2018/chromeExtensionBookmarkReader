@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title>Bookmark Reader</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+    <h2 style="color: white;">Bookmark Reader</h2>
+    <label id="searchErrorMessage">file doesn't exists.</label>
+        <input type="text" id="searchWords" placeholder="search folder name" list="inputDatalist" maxlength="20"/>
+        <datalist id="inputDatalist"></datalist>
+        <input type="button" id="searchButton" value="search" />
+    <hr>
+
+    <div class="up">
+    </div>
+   
+    <div id="contents">
+        <div class='listdiv'>
+            <p id='cont_bookmark_list1' class='list' value='-1'></p>
+        </div>
+        <div class='listdiv'>
+            <p id='cont_bookmark_list2' class='list' value='0'></p>
+        </div>
+        <div class='listdiv'>
+            <p id='cont_bookmark_list3' class='list' value='1'></p>
+        </div>
+        <div class='listdiv'>
+            <p id='cont_bookmark_list4' class='list' value='2'></p>
+        </div>
+        <div class='listdiv'>
+            <p id='cont_bookmark_list5' class='list' value='3'></p>
+        </div>
+        <div class='listdiv'>
+            <p id='cont_bookmark_list6' class='list' value='4'></p>
+        </div>
+        
+    </div>
+    <div class="down">
+    </div>
+
+    <script src="popup.js">
+    </script>
+</body>
+
+</html>
